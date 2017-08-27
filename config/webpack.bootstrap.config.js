@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-const bootstraprcCustomLocation = process.env.BOOTSTRAPRC_LOCATION;
+const bootstraprcCustomLocation = 'config/.bootstraprc';
 
 let defaultBootstraprcFileExists;
 
