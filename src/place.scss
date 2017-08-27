@@ -1,0 +1,34 @@
+.place {
+    display: flex;
+
+    .selected-place {
+        width: 240px;
+        border: 1px solid #ccc;
+        background: white;
+        .item-logo {
+            height: 250px;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+        }
+        .item-content {
+            background: white;
+            margin-top: 10px;
+            margin-left: 16px;
+            .title {
+                padding: 6px 0;
+                font-weight: bold;
+                color: $gray;
+                font-size: $font-size-base;
+            }
+            .sub-title {
+                padding: 6px 0;
+                color: $gray-light;
+                font-size: $font-size-small;
+            }
+        }
+    }
+    .food-menu {
+        flex-grow: 1;
+    }
+}

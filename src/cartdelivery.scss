@@ -1,0 +1,106 @@
+.cart-delivery {
+    padding: 0 10px;
+
+    .delivery {
+        background: white;
+        padding: 10px;
+        margin-bottom: 5px;
+
+        .header {
+            color: $gray;
+            font-size: $font-size-large;
+            font-weight: bold;
+            padding: 10px 0 20px;
+            border-bottom: 1px solid #ccc;
+        }
+    }
+
+    .cart {
+        background: white;
+        padding: 10px;
+        padding-right: 0;
+        .header {
+            color: $gray;
+            font-size: $font-size-large;
+            font-weight: bold;
+            padding: 10px 0 20px;
+            border-bottom: 1px solid #ccc;
+        }
+        .content {
+            padding: 10px 12px 10px 6px;
+            max-height: 300px;
+            overflow-x: hidden;
+            overflow-y: auto;
+            .item {
+                color: $gray;
+                font-weight: bold;
+                padding: 6px 0;
+            }
+
+            .item-detail {
+                display: flex;
+                justify-content: space-between;
+                flex-flow: row nowrap;
+                padding: 10px;
+                color: $gray-light;
+
+                .price {
+                    &:before {
+                        content: '\f155';
+                        font-family: FontAwesome;
+                        margin-right: 1px;
+                    }
+                }
+                .item-quantity {
+                    flex-grow: 1;
+                }
+                .item-total-price {
+                    @extend .price;
+                    align-self: center;
+                }
+                .btn-group {
+                    margin-right: 5px;
+                    .btn-default {
+                        color: white;
+                        background: green;
+                        padding: 6px 12px;
+                        &:hover,
+                        &:focus {
+                            border-color: #ccc;
+                            outline: none;
+                            box-shadow: none;
+                        }
+                    }
+                    .item-count {
+                        color: $gray !important;
+                        background: white !important;
+                    }
+                }
+                .item-price {
+                    display: inline-block;
+                    margin-left: 5px;
+                    @extend .price;
+                }
+            }
+        }
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 6px 10px 0;
+            border-top: 1px solid #ccc;
+            .title {
+                font-size: $font-size-base;
+                font-weight: bold;
+                color: $gray-light;
+            }
+            .price {
+                padding-right: 10px;
+                &:before {
+                    content: '\f155';
+                    font-family: FontAwesome;
+                    margin-right: 1px;
+                }
+            }
+        }
+    }
+}

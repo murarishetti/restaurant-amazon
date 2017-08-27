@@ -1,0 +1,24 @@
+$font-size-base: 14px;
+$font-size-large: 16px;
+$font-size-small: 12px;
+$brand-primary: #3795a9;
+$brand-secondary: #123c45;
+$gray: #555;
+$gray-dark: #333;
+$gray-light: #777;
+$gray-lightest: #999;
+$white: #fff;
+
+$radio-checked-color: $brand-primary;
+$radio-unchecked-color: rgba(0, 0, 0, 0.20);
+$radio-unchecked-hover-color: $radio-checked-color;
+$radio-disabled-color: rgba(0, 0, 0, 0.10);
+
+//** MailTech Checkbox
+$checkbox-checked-color: $brand-primary;
+$checkbox-unchecked-color: rgba(0, 0, 0, 0.20);
+$checkbox-unchecked-hover-color: $checkbox-checked-color;
+$checkbox-disabled-color: rgba(0, 0, 0, 0.10);
+$checkbox-circle-checked-color: $brand-primary;
+$checkbox-circle-unchecked-color: $white;
+$checkbox-circle-unchecked-hover-color: $gray-lightest;

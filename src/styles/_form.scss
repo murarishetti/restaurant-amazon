@@ -1,0 +1,116 @@
+.app-checkbox {
+    input[type="checkbox"] {
+        @include sr-only();
+    }
+
+    label {
+        &:before {
+            content: "\f096";
+            @include font-awesome-icons-base-properties(true, 1.1em);
+            color: $checkbox-unchecked-color;
+            margin-left: -20px; // same as .label padding
+            margin-right: 4px; // adjust margin for better spacing
+            margin-top: -1px; //todo-h: quick hack to fix vertical positioning. resolve later.
+            height: 1em;
+            width: 1em;
+            cursor: pointer;
+            vertical-align: middle;
+            transition: all 0.4s ease;
+        }
+
+        &:hover {
+            &:before {
+                color: $checkbox-unchecked-hover-color;
+            }
+        }
+    }
+
+    input[type="checkbox"]:checked + label {
+        &:before {
+            content: "\f14a";
+            color: $checkbox-checked-color;
+        }
+    }
+
+    input[type="checkbox"]:disabled + label {
+        &:before {
+            color: $checkbox-disabled-color;
+            cursor: not-allowed;
+        }
+    }
+
+    &.app-checkbox-circle {
+        label {
+            &:before {
+                content: "\f10c";
+                color: $checkbox-circle-unchecked-color;
+            }
+
+            &:hover {
+                &:before {
+                    color: $checkbox-unchecked-hover-color;
+                }
+            }
+        }
+
+        input[type="checkbox"]:checked + label {
+            &:before {
+                content: "\f058";
+                color: $checkbox-circle-checked-color;
+            }
+        }
+    }
+}
+
+// MailTech Radio
+.app-radio {
+    input[type="radio"] {
+        @include sr-only();
+    }
+
+    label {
+        &:before {
+            content: "\f10c";
+            @include font-awesome-icons-base-properties(true, 1.1em);
+            color: $radio-unchecked-color;
+            margin-left: -20px; // same as .label padding
+            margin-right: 4px; // adjust margin for better spacing
+            margin-top: -1px; //todo-h: quick hack to fix vertical positioning. resolve later.
+            cursor: pointer;
+            height: 1em;
+            width: 1em;
+            vertical-align: middle;
+            transition: all 0.4s ease;
+        }
+
+        &:hover {
+            &:before {
+                color: $radio-unchecked-hover-color;
+            }
+        }
+    }
+
+    input[type="radio"]:checked + label {
+        &:before {
+            content: "\f192";
+            color: $radio-checked-color;
+        }
+    }
+
+    input[type="radio"]:disabled + label {
+        &:before {
+            color: $radio-disabled-color;
+            cursor: not-allowed;
+        }
+    }
+}
+
+.form-control {
+    height: 30px;
+    min-width: 300px;
+    &:focus,
+    &:hover {
+        border-color: $brand-primary;
+        box-shadow: none;
+    }
+}

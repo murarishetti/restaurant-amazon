@@ -1,0 +1,47 @@
+.customisations {
+    .customisation {
+        .title {
+            font-size: 14px;
+            font-weight: bold;
+            padding: 6px 20px;
+        }
+
+        .items {
+            padding-right: 20px;
+            .item-options {
+                display: flex;
+                justify-content: space-between;
+                margin: 10px 0;
+
+                .item-label {
+                    flex-grow: 1;
+                    align-self: center;
+                    margin: 0;
+                }
+                .item-price {
+                    flex-grow: 1;
+                    align-self: center;
+                    text-align: right;
+                    color: $gray-light;
+                    &:before {
+                        content: '\f155';
+                        font-family: FontAwesome;
+                        margin-right: 1px;
+                    }
+                }
+            }
+        }
+    }
+    .modal-footer {
+        span {
+            display: inline-block;
+            margin-right: 10px;
+            color: $gray;
+            &:before {
+                content: '\f155';
+                font-family: FontAwesome;
+                margin-right: 1px;
+            }
+        }
+    }
+}

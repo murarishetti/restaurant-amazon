@@ -1,0 +1,36 @@
+.app {
+    .navbar-inverse {
+        background: $gray-dark;
+        margin-bottom: 0;
+
+        .navbar-brand {
+            color: white;
+        }
+        .navbar-form {
+            display: inline-block;
+            margin-left: 300px;
+        }
+        .navbar-nav {
+            color: rgba(255, 255, 255, 0.8);
+            .badge {
+                margin-right: 5px;
+            }
+        }
+    }
+
+    .main {
+        position: absolute;
+        top: 52px;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        overflow-x: hidden;
+        overflow-y: auto;
+        padding-top: 10px;
+        background: #f3f3f3;
+
+        .main-content {
+            margin: 0 auto;
+        }
+    }
+}

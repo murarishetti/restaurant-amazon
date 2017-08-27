@@ -1,0 +1,77 @@
+.food-menu {
+    padding-left: 10px;
+    .panel {
+        .panel-heading {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .item {
+            color: $gray;
+            padding: 12px 20px;
+            display: flex;
+            justify-content: space-between;
+            &:not(:last-child) {
+                border-bottom: 1px solid #ccc;
+            }
+            &:hover {
+                cursor: pointer;
+            }
+            &-content {
+                font-size: $font-size-base;
+                flex-grow: 1;
+                .dish {
+                    padding: 6px 0;
+                    font-weight: bold;
+                }
+                .price {
+                    font-size: $font-size-base;
+                    color: $gray-light;
+                    &:before {
+                        content: '\f155';
+                        font-family: FontAwesome;
+                        margin-right: 1px;
+                    }
+                    &:after {
+                        content: 'onwards';
+                        margin-left: 5px;
+                    }
+                }
+                .hint {
+                    color: orange;
+                    font-size: $font-size-small;
+                }
+            }
+            &-actions {
+                align-self: center;
+                .btn-default {
+                    padding: 6px 20px;
+                    &:hover,
+                    &:focus,
+                    &:active {
+                        background: none;
+                        border: 1px solid rgba(0, 0, 0, 0.8);
+                        outline: none;
+                        box-shadow: none;
+                    }
+                }
+                .btn-group {
+                    .btn-default {
+                        color: white;
+                        background: green;
+                        padding: 6px 12px;
+                        &:hover,
+                        &:focus {
+                            border-color: #ccc;
+                            outline: none;
+                            box-shadow: none;
+                        }
+                    }
+                }
+                .item-count {
+                    color: $gray !important;
+                    background: white !important;
+                }
+            }
+        }
+    }
+}

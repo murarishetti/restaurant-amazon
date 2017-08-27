@@ -1,0 +1,37 @@
+.home {
+    display: flex;
+    flex-flow: row wrap;
+    .item-main {
+        width: 240px;
+        background: white;
+        margin: 8px 6px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+        &:hover {
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+        }
+        &-logo {
+            height: 200px;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+        }
+        &-content {
+            background: white;
+            box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.2);
+            margin-top: 10px;
+            .title {
+                padding: 6px 12px;
+                font-weight: bold;
+                color: $gray;
+                font-size: $font-size-base;
+            }
+            .sub-title {
+                padding: 6px 12px;
+                color: $gray-light;
+                font-size: $font-size-small;
+            }
+        }
+    }
+}
