@@ -4,42 +4,42 @@ export default {
             name: 'Subway',
             thumbnail:
                 'http://www.subway.com/~/media/base_english/images/branding/subway_logo_og.png',
-            area: 'sdfsdfsd'
+            area: 'Kansas city'
         },
         {
             name: 'PizzaHut',
             thumbnail:
                 'https://upload.wikimedia.org/wikipedia/en/thumb/d/d2/Pizza_Hut_logo.svg/1088px-Pizza_Hut_logo.svg.png',
-            area: 'dsfdsfds'
+            area: 'Kansas city'
         },
         {
             name: 'Dominos',
             thumbnail:
                 'https://cache.dominos.com/olo/5_10_2/assets/build/images/promo/dominos_social_logo.jpg',
-            area: 'fdsfsdfsdf'
+            area: 'Kansas city'
         },
         {
             name: 'McDonalds',
             thumbnail:
                 'http://1000logos.net/wp-content/uploads/2017/03/Font-McDonalds-Logo.png',
-            area: 'dfsdfds'
+            area: 'Kansas city'
         },
         {
             name: 'Burger King',
             thumbnail: 'http://www.rifaeconomia2017.com/assets/img/b5.png',
-            area: 'sdfsdfsd'
+            area: 'Kansas city'
         },
         {
             name: 'PapaJohns',
             thumbnail:
                 'https://upload.wikimedia.org/wikipedia/en/thumb/5/54/PapaJohns.svg/1280px-PapaJohns.svg.png',
-            area: 'dsfdsfds'
+            area: 'Kansas city'
         },
         {
             name: 'Dunkin Donuts',
             thumbnail:
                 'http://www.mpvre.com/wp-content/uploads/2015/02/Dunkin-Donuts-710x400.jpg',
-            area: 'fdsfsdfsdf'
+            area: 'Kansas city'
         }
     ],
     Vegetarian: {
