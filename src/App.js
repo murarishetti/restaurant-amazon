@@ -23,7 +23,7 @@ class App extends Component {
                 <Navbar inverse collapseOnSelect>
                     <Navbar.Header>
                         <Navbar.Brand>
-                            <Link to="/">My App</Link>
+                            <Link to="/">Amazon Restaurant</Link>
                         </Navbar.Brand>
                         <Navbar.Toggle />
                     </Navbar.Header>
@@ -34,6 +34,9 @@ class App extends Component {
                             </FormGroup>
                         </Navbar.Form>
                         <Nav pullRight>
+                            <NavItem>
+                                <Link to="/"><navHome>Home</navHome></Link>
+                            </NavItem>
                             <NavItem>
                                 <Badge>{this.props.count}</Badge>
                                 Cart
